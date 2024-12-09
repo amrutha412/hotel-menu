@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Menu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-category">
+            <h2>Appetizers</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="appetizer1.jpg" alt="Dish Image">
+                    <h3>Spring Rolls</h3>
+                    <p>$5.99</p>
+                    <button onclick="addToCart('Spring Rolls', 5.99)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="appetizer2.jpg" alt="Dish Image">
+                    <h3>Garlic Bread</h3>
+                    <p>$3.49</p>
+                    <button onclick="addToCart('Garlic Bread', 3.49)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-category">
+            <h2>Main Course</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="maincourse1.jpg" alt="Dish Image">
+                    <h3>Grilled Chicken</h3>
+                    <p>$12.99</p>
+                    <button onclick="addToCart('Grilled Chicken', 12.99)">Add to Cart</button>
+                </div>
+                <div class="menu-item">
+                    <img src="maincourse2.jpg" alt="Dish Image">
+                    <h3>Steak</h3>
+                    <p>$15.49</p>
+                    <button onclick="addToCart('Steak', 15.49)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-category">
+            <h2>Desserts</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="dessert1.jpg" alt="Dish Image">
+                    <h3>Chocolate Cake</h3>
+                    <p>$4.99</p>
+                    <button onclick="addToCart('Chocolate Cake', 4.99)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <a href="cart.html" class="btn">View Cart</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Hotel Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
